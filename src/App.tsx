@@ -14,19 +14,19 @@ function App() {
         return <Dashboard />;
       case 'users':
         return <UserManagement />;
-      case 'logs':
-        return <ActivityLogs />;
       case 'settings':
         return <Settings />;
+      case 'logs':
+        return <ActivityLogs />;
       default:
         return <Dashboard />;
     }
   };
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex flex-col md:flex-row h-screen bg-gray-50">
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto p-4">
         {renderContent()}
       </main>
     </div>
