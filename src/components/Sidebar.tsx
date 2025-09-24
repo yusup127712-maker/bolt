@@ -24,14 +24,12 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
     <div className="w-64 bg-slate-900 text-white flex flex-col">
       <div className="p-6 border-b border-slate-700">
         <div className="flex items-center space-x-3">
-          <img 
-            src="/happ.jpg" 
-            alt="VPN Logo" 
-            className="w-10 h-10 rounded-lg object-cover"
-          />
+          <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg">H</span>
+          </div>
           <div>
-            <h1 className="text-xl font-bold">VPN Kontrol</h1>
-            <p className="text-slate-400 text-sm">Admin Panely</p>
+            <h1 className="text-xl font-bold">Happ Proxy</h1>
+            <p className="text-slate-400 text-sm">Utility Panel</p>
           </div>
         </div>
       </div>
