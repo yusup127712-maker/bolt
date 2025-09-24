@@ -9,7 +9,7 @@ const ActivityLogs: React.FC = () => {
     {
       id: '1',
       timestamp: '2024-01-15 14:32:15',
-      user: 'john_doe',
+      user: 'ahmet_gurbanov',
       action: 'LOGIN',
       description: 'User successfully logged in from 192.168.1.100',
       status: 'success',
@@ -18,7 +18,7 @@ const ActivityLogs: React.FC = () => {
     {
       id: '2',
       timestamp: '2024-01-15 14:30:42',
-      user: 'sarah_wilson',
+      user: 'gulnar_atayeva',
       action: 'CONNECTION_ESTABLISHED',
       description: 'VPN connection established to German server',
       status: 'success',
@@ -27,7 +27,7 @@ const ActivityLogs: React.FC = () => {
     {
       id: '3',
       timestamp: '2024-01-15 14:28:19',
-      user: 'mike_johnson',
+      user: 'dovran_orazov',
       action: 'LOGIN_FAILED',
       description: 'Failed login attempt - incorrect password',
       status: 'error',
@@ -36,7 +36,7 @@ const ActivityLogs: React.FC = () => {
     {
       id: '4',
       timestamp: '2024-01-15 14:25:33',
-      user: 'emily_davis',
+      user: 'maya_nuryyeva',
       action: 'CONNECTION_TERMINATED',
       description: 'VPN connection terminated by user',
       status: 'info',
@@ -45,7 +45,7 @@ const ActivityLogs: React.FC = () => {
     {
       id: '5',
       timestamp: '2024-01-15 14:22:47',
-      user: 'alex_brown',
+      user: 'serdar_hojayev',
       action: 'DATA_LIMIT_WARNING',
       description: 'User reached 80% of monthly data limit',
       status: 'warning',

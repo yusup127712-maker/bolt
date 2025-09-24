@@ -4,31 +4,31 @@ import { Wifi, WifiOff } from 'lucide-react';
 const RecentConnections: React.FC = () => {
   const connections = [
     {
-      user: 'john_doe',
+      user: 'ahmet_gurbanov',
       action: 'connected',
       time: '2 minutes ago',
       location: 'United States'
     },
     {
-      user: 'sarah_wilson',
+      user: 'gulnar_atayeva',
       action: 'disconnected',
       time: '5 minutes ago',
       location: 'Germany'
     },
     {
-      user: 'mike_johnson',
+      user: 'dovran_orazov',
       action: 'connected',
       time: '12 minutes ago',
       location: 'Japan'
     },
     {
-      user: 'emily_davis',
+      user: 'maya_nuryyeva',
       action: 'connected',
       time: '18 minutes ago',
       location: 'United Kingdom'
     },
     {
-      user: 'alex_brown',
+      user: 'serdar_hojayev',
       action: 'disconnected',
       time: '25 minutes ago',
       location: 'Singapore'

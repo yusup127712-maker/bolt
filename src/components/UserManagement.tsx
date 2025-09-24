@@ -32,8 +32,8 @@ const UserManagement: React.FC = () => {
   const mockUsers: User[] = [
     {
       id: '1',
-      username: 'john_doe',
-      email: 'john@example.com',
+      username: 'ahmet_gurbanov',
+      email: 'ahmet@example.com',
       status: 'active',
       lastLogin: '2 hours ago',
       dataUsed: '1.2 GB',
@@ -42,8 +42,8 @@ const UserManagement: React.FC = () => {
     },
     {
       id: '2',
-      username: 'sarah_wilson',
-      email: 'sarah@example.com',
+      username: 'gulnar_atayeva',
+      email: 'gulnar@example.com',
       status: 'active',
       lastLogin: '5 minutes ago',
       dataUsed: '847 MB',
@@ -52,8 +52,8 @@ const UserManagement: React.FC = () => {
     },
     {
       id: '3',
-      username: 'mike_johnson',
-      email: 'mike@example.com',
+      username: 'dovran_orazov',
+      email: 'dovran@example.com',
       status: 'inactive',
       lastLogin: '2 days ago',
       dataUsed: '2.8 GB',
@@ -62,8 +62,8 @@ const UserManagement: React.FC = () => {
     },
     {
       id: '4',
-      username: 'emily_davis',
-      email: 'emily@example.com',
+      username: 'maya_nuryyeva',
+      email: 'maya@example.com',
       status: 'suspended',
       lastLogin: '1 week ago',
       dataUsed: '156 MB',
