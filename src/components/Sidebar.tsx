@@ -4,7 +4,6 @@ import {
   Users, 
   Activity, 
   Settings as SettingsIcon,
-  Shield,
   Wifi
 } from 'lucide-react';
 
@@ -25,9 +24,11 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
     <div className="w-64 bg-slate-900 text-white flex flex-col">
       <div className="p-6 border-b border-slate-700">
         <div className="flex items-center space-x-3">
-          <div className="p-2 bg-blue-600 rounded-lg">
-            <Shield className="w-6 h-6" />
-          </div>
+          <img 
+            src="/happ.jpg" 
+            alt="VPN Logo" 
+            className="w-10 h-10 rounded-lg object-cover"
+          />
           <div>
             <h1 className="text-xl font-bold">VPN Kontrol</h1>
             <p className="text-slate-400 text-sm">Admin Panely</p>
