@@ -112,8 +112,8 @@ const UserManagement: React.FC = () => {
   return (
     <div className="p-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">User Management</h1>
-        <p className="text-gray-600">Manage VPN users, monitor connections, and control access</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Ulanyjy dolandyryşy</h1>
+        <p className="text-gray-600">VPN ulanyjylaryny dolandyryň, baglanyşyklary gözegçilik ediň we giriş hukugyny dolandyryň</p>
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-gray-200">
@@ -124,7 +124,7 @@ const UserManagement: React.FC = () => {
                 <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
                 <input
                   type="text"
-                  placeholder="Search users..."
+                  placeholder="Ulanyjylary gözläň..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -136,17 +136,17 @@ const UserManagement: React.FC = () => {
                 onChange={(e) => setStatusFilter(e.target.value)}
                 className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <option value="all">All Status</option>
-                <option value="active">Active</option>
-                <option value="inactive">Inactive</option>
-                <option value="suspended">Suspended</option>
+                <option value="all">Ähli ýagdaýlar</option>
+                <option value="active">Işjeň</option>
+                <option value="inactive">Işjeň däl</option>
+                <option value="suspended">Togtadylan</option>
               </select>
             </div>
 
             <div className="flex items-center space-x-3">
               <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center space-x-2">
                 <Download className="w-4 h-4" />
-                <span>Export</span>
+                <span>Eksport</span>
               </button>
               
               <button 
@@ -154,7 +154,7 @@ const UserManagement: React.FC = () => {
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
               >
                 <Plus className="w-4 h-4" />
-                <span>Add User</span>
+                <span>Ulanyjy goşmak</span>
               </button>
             </div>
           </div>
@@ -162,20 +162,20 @@ const UserManagement: React.FC = () => {
           {selectedUsers.length > 0 && (
             <div className="mt-4 p-4 bg-blue-50 rounded-lg">
               <div className="flex items-center justify-between">
-                <p className="text-sm text-blue-800">
+                    {selectedUsers.length} ulanyjy saýlandy
                   {selectedUsers.length} user(s) selected
                 </p>
                 <div className="flex items-center space-x-2">
                   <button className="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700 transition-colors flex items-center space-x-1">
-                    <Shield className="w-3 h-3" />
+                      <span>Işjeňleşdirmek</span>
                     <span>Activate</span>
                   </button>
                   <button className="px-3 py-1 bg-orange-600 text-white text-sm rounded hover:bg-orange-700 transition-colors flex items-center space-x-1">
-                    <ShieldOff className="w-3 h-3" />
+                      <span>Togtamak</span>
                     <span>Suspend</span>
                   </button>
                   <button className="px-3 py-1 bg-red-600 text-white text-sm rounded hover:bg-red-700 transition-colors flex items-center space-x-1">
-                    <Trash2 className="w-3 h-3" />
+                      <span>Pozmak</span>
                     <span>Delete</span>
                   </button>
                 </div>
@@ -196,13 +196,13 @@ const UserManagement: React.FC = () => {
                     className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                   />
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Login</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data Used</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Connection</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">IP Address</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ulanyjy</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ýagdaýy</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Soňky giriş</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ulanylan maglumat</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Baglanyşyk</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">IP salgysy</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Hereketler</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
@@ -257,17 +257,17 @@ const UserManagement: React.FC = () => {
         <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-700">
-              Showing {filteredUsers.length} of {mockUsers.length} users
+              {mockUsers.length} ulanyjydan {filteredUsers.length} görkezilýär
             </p>
             <div className="flex items-center space-x-2">
               <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700 transition-colors">
-                Previous
+                Öňki
               </button>
               <button className="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition-colors">
                 1
               </button>
               <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700 transition-colors">
-                Next
+                Indiki
               </button>
             </div>
           </div>

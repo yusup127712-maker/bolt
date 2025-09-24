@@ -15,7 +15,7 @@ const UserActivityChart: React.FC = () => {
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-      <h3 className="text-lg font-semibold text-gray-900 mb-6">User Activity (24h)</h3>
+      <h3 className="text-lg font-semibold text-gray-900 mb-6">Ulanyjy işjeňligi (24 sagat)</h3>
       
       <div className="relative h-64">
         <div className="absolute inset-0 flex items-end justify-between space-x-2">
@@ -41,8 +41,8 @@ const UserActivityChart: React.FC = () => {
       </div>
       
       <div className="mt-4 flex items-center justify-between text-sm text-gray-600">
-        <span>Peak: {maxUsers} users at 16:00</span>
-        <span>Average: {Math.round(data.reduce((sum, d) => sum + d.users, 0) / data.length)} users</span>
+        <span>Iň ýokary: {maxUsers} ulanyjy 16:00-da</span>
+        <span>Ortaça: {Math.round(data.reduce((sum, d) => sum + d.users, 0) / data.length)} ulanyjy</span>
       </div>
     </div>
   );

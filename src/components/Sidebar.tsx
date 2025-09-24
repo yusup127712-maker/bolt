@@ -14,10 +14,10 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'users', label: 'User Management', icon: Users },
-    { id: 'logs', label: 'Activity Logs', icon: Activity },
-    { id: 'settings', label: 'Settings', icon: SettingsIcon },
+    { id: 'dashboard', label: 'Esasy sahypa', icon: LayoutDashboard },
+    { id: 'users', label: 'Ulanyjy dolandyryşy', icon: Users },
+    { id: 'logs', label: 'Işjeňlik ýazgylary', icon: Activity },
+    { id: 'settings', label: 'Sazlamalar', icon: SettingsIcon },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
           </div>
           <div>
             <h1 className="text-xl font-bold">Happ Proxy</h1>
-            <p className="text-slate-400 text-sm">Utility Panel</p>
+            <p className="text-slate-400 text-sm">Dolandyryş paneli</p>
           </div>
         </div>
       </div>
@@ -63,8 +63,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
         <div className="flex items-center space-x-3 p-3 bg-slate-800 rounded-lg">
           <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
           <div className="flex-1">
-            <p className="text-sm font-medium">Server Status</p>
-            <p className="text-xs text-slate-400">Online - 99.9% uptime</p>
+            <p className="text-sm font-medium">Serwer ýagdaýy</p>
+            <p className="text-xs text-slate-400">Onlaýn - 99.9% işleýär</p>
           </div>
         </div>
       </div>

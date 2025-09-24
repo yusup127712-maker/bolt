@@ -25,6 +25,20 @@ const StatsCard: React.FC<StatsCardProps> = ({
     orange: 'bg-orange-500'
   };
 
+  const getStatusBadge = (status: string) => {
+    const styles = {
+      active: 'bg-green-100 text-green-800',
+      inactive: 'bg-gray-100 text-gray-800',
+      suspended: 'bg-red-100 text-red-800'
+    };
+    
+    return (
+      <span className={`px-3 py-1 rounded-full text-xs font-medium ${styles[status as keyof typeof styles]}`}>
+        {status === 'active' ? 'Işjeň' : status === 'inactive' ? 'Işjeň däl' : 'Togtadylan'}
+      </span>
+    );
+  };
+
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <div className="flex items-center justify-between mb-4">

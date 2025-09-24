@@ -71,7 +71,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
       <div className="bg-white rounded-xl shadow-xl w-full max-w-md mx-4">
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <h2 className="text-xl font-semibold text-gray-900">
-            {user ? 'Edit User' : 'Add New User'}
+            {user ? 'Ulanyjyny üýtgetmek' : 'Täze ulanyjy goşmak'}
           </h2>
           <button
             onClick={onClose}
@@ -84,7 +84,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Username
+              Ulanyjy ady
             </label>
             <input
               type="text"
@@ -93,13 +93,13 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="Enter username"
+              placeholder="Ulanyjy adyny giriziň"
             />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Email
+              E-poçta
             </label>
             <input
               type="email"
@@ -108,13 +108,13 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="Enter email address"
+              placeholder="E-poçta salgysyny giriziň"
             />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Password
+              Parol
             </label>
             <div className="relative">
               <input
@@ -124,7 +124,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
                 onChange={handleChange}
                 required={!user}
                 className="w-full px-3 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder={user ? "Leave blank to keep current password" : "Enter password"}
+                placeholder={user ? "Häzirki paroly saklamak üçin boş goýuň" : "Paroly giriziň"}
               />
               <button
                 type="button"
@@ -138,7 +138,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Status
+              Ýagdaýy
             </label>
             <select
               name="status"
@@ -146,16 +146,16 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-              <option value="suspended">Suspended</option>
+              <option value="active">Işjeň</option>
+              <option value="inactive">Işjeň däl</option>
+              <option value="suspended">Togtadylan</option>
             </select>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Max Connections
+                Iň köp baglanyşyk
               </label>
               <input
                 type="number"
@@ -170,7 +170,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Data Limit (GB)
+                Maglumat çägi (GB)
               </label>
               <input
                 type="number"
@@ -185,7 +185,7 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Expiration Date (Optional)
+              Möhletiniň gutarýan senesi (Meýletin)
             </label>
             <input
               type="date"
@@ -201,14 +201,14 @@ const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSave }) => {
               type="submit"
               className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
-              {user ? 'Update User' : 'Create User'}
+              {user ? 'Ulanyjyny täzelemek' : 'Ulanyjy döretmek'}
             </button>
             <button
               type="button"
               onClick={onClose}
               className="flex-1 px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors font-medium"
             >
-              Cancel
+              Ýatyrmak
             </button>
           </div>
         </form>
