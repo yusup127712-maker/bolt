@@ -29,8 +29,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
             <Shield className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-xl font-bold">VPN Control</h1>
-            <p className="text-slate-400 text-sm">Admin Panel</p>
+            <h1 className="text-xl font-bold">VPN Kontrol</h1>
+            <p className="text-slate-400 text-sm">Admin Panely</p>
           </div>
         </div>
       </div>
