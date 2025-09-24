@@ -104,7 +104,7 @@ const ActivityLogs: React.FC = () => {
   return (
     <div className="p-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Activity Logs</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Aktiw loglar</h1>
         <p className="text-gray-600">Monitor system activity and user actions</p>
       </div>
 
